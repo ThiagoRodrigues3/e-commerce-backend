@@ -27,7 +27,7 @@ router.get('/:id', (req, res) => {
     });
 
     if (!productData) {
-      res.status(404).json({ message: 'No Product found with that id!' });
+      res.status(404).json({ message: 'No Product with that ID!' });
       return;
     }
 
@@ -121,7 +121,7 @@ router.delete('/:id', (req, res) => {
     });
 
     if (!productData) {
-      res.status(404).json({ message: 'No Product found with that id!' });
+      res.status(404).json({ message: 'No Product with that ID!' });
       return;
     }
 
